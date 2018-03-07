@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MovieListComponent } from './components/movie/movie-list/movie-list.component';
+import { MovieItemComponent } from './components/movie/movie-item/movie-item.component';
+import { HomeComponent } from './components/misc/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovieListComponent,
+    MovieItemComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
