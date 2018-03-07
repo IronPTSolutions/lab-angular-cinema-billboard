@@ -1,3 +1,6 @@
-<p>
-  movie-list works!
-</p>
+<ul class="text-center">
+  <li  *ngFor="let movie of movies">
+    <h4>ROOM {{ movie.room }}</h4>
+    <img [src]="movie.poster" alt="Poster">
+  </li>
+</ul>

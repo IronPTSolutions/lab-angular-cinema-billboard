@@ -18,7 +18,8 @@ export const movies: Array<Movie> = [
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    room: 1
   }, {
     id: 2,
     title: "The Godfather",
@@ -36,7 +37,8 @@ export const movies: Array<Movie> = [
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    room: 2
   }, {
     id: 3,
     title: "The Godfather Part II",
@@ -54,7 +56,8 @@ export const movies: Array<Movie> = [
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    room: 3
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -91,6 +94,7 @@ export const movies: Array<Movie> = [
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    room: 4
   }
 ]
