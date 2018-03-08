@@ -1,0 +1,26 @@
+.title span {
+    font-weight: 100;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    margin-bottom: 5px;
+}
+
+li strong, li ul, li p  {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 70px;
+}
+
+li ul, li p {
+    margin-left: 5px;
+    padding: 0;
+}

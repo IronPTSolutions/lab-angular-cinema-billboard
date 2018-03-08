@@ -1,6 +1,6 @@
 <ul class="text-center">
   <li  *ngFor="let movie of movies">
     <h4>ROOM {{ movie.room }}</h4>
-    <img [src]="movie.poster" alt="Poster">
+    <img [src]="movie.poster" alt="Poster" (click)="onClickPoster(movie.id)">
   </li>
 </ul>

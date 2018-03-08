@@ -1,3 +1,40 @@
-<p>
-  movie-item works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <h5 class="title"><span>Room {{ movie?.room }}</span> - {{ movie?.title }}</h5>
+  </div>
+  <div class="col-xs-12 col-sm-3">
+    <img [src]="movie?.poster" alt="Poster">
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <ul>
+      <li>
+        <strong>Genres:</strong>
+        <ul>
+          <li *ngFor="let genre of movie?.genres">{{ genre }}</li>
+        </ul>
+      </li>
+      <li><strong>Year:</strong> <p>{{ movie?.year }}</p></li>
+      <li>
+        <strong>Actors:</strong>
+        <ul>
+          <li *ngFor="let actor of movie?.actors">{{ actor }}</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Schedule:</strong>
+        <ul>
+          <li *ngFor="let schedule of movie?.schedule">{{ schedule }}</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Synopsis:</strong>
+        <p>{{ movie?.synopsis }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 text-center">
+    <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
+  </div>
+</div>
